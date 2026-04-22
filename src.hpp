@@ -46,7 +46,7 @@ class any_ptr {
   any_ptr(const any_ptr &other) : ctrl_(other.ctrl_) { retain(); }
 
   template <class T>
-  explicit any_ptr(T *ptr) {
+  any_ptr(T *ptr) {
     if (ptr) {
       ctrl_ = new control_block{static_cast<void *>(ptr), &typeid(T), &destroy<T>, 1};
     }
