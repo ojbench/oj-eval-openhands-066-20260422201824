@@ -1,3 +1,6 @@
 CMakeFiles/
 CMakeCache.txt
 build/
+Makefile
+cmake_install.cmake
+code
